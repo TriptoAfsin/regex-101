@@ -2,9 +2,9 @@
 
 
 
-**<a href="https://regex101.com/">✔Check this site</a>**
+**<a href="https://regex101.com/" target="_blank">✔Check this site</a>**
 
-**<a href="https://www.youtube.com/watch?v=909NfO1St0A">✔Youtube</a>**
+**<a href="https://www.youtube.com/watch?v=909NfO1St0A" target="_blank">✔Youtube</a>**
 
 
 ## Basics -
@@ -77,3 +77,14 @@ console.log(isPresent); //will return true, even trpto will return true
 
 {2} Quantifier — Matches exactly 2 times 
 
+### 🔰 /\d+/ : 
+
+\d+ matches a digit (equal to [0-9])
+
+### 🔰 /\w/ : 
+
+\w matches any word character (equal to [a-zA-Z0-9_]) e.g 'a', 'x'
+
+### 🔰 /\w+/ : 
+
+\w+ matches any word character (equal to [a-zA-Z0-9_]) e.g 'apple'
