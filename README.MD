@@ -1,8 +1,10 @@
 # Regex 101
 
-**[✔check this site]("https://regex101.com/")**
 
-**[✔Youtube]("https://www.youtube.com/watch?v=909NfO1St0A")**
+
+**<a href="https://regex101.com/">✔Check this site</a>**
+
+**<a href="https://www.youtube.com/watch?v=909NfO1St0A">✔Youtube</a>**
 
 
 ## Basics -
