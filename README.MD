@@ -67,11 +67,11 @@ const isPresent = searchQuery.test(myStr); //here we check , if present then tru
 console.log(isPresent); //will return true, even trpto will return true
 
 ````
-### 🔰 /[0-9]{1, 3}/ ### : 
+### 🔰 /[0-9]{1, 3}/ : 
 
 {1, 3} matches the characters {1, 3} literally (case insensitive)
 
-### 🔰 /[0-9]{2}/ ### : 
+### 🔰 /[0-9]{2}/ : 
 
 {2} Quantifier — Matches exactly 2 times 
 
