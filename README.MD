@@ -88,3 +88,49 @@ console.log(isPresent); //will return true, even trpto will return true
 ### 🔰 /\w+/ : 
 
 \w+ matches any word character (equal to [a-zA-Z0-9_]) e.g 'apple'
+
+### 🔰 /my name\s/ :
+
+\s matches any whitespace character (equal to [\r\n\t\f\v ])
+
+``` javascript
+const myStr = "My name is tripto, my age is 21, my fav color is green";
+const searchQuery = /my name\s/gm; //this is the search query, here we search for "name is plus anything within a - z, so tripto will be also counted"
+const isPresent = searchQuery.test(myStr); //here we check , if present then true, else false
+
+console.log(isPresent); //will return true, as theres space after my name
+
+````
+
+### 🔰 /my name\n/ :
+
+\n matches a line-feed (newline) character (ASCII 10)
+
+``` javascript
+const myStr = "My name is tripto, my age is 21, my fav color is green";
+const searchQuery = /my name\n/gm; //this is the search query, here we search for "name is plus anything within a - z, so tripto will be also counted"
+const isPresent = searchQuery.test(myStr); //here we check , if present then true, else false
+
+console.log(isPresent); //will return false, as theres no new line after my name
+
+````
+
+### 🔰 /my name\t/ :
+
+\t matches a tab character (ASCII 9)
+
+## Grouping:
+
+### 🔰 /my name is ([a-z]+)/ :
+
+here group 1 will be the name, say : my name is tripto, tripto -> group 1
+
+``` javascript
+const myStr = "My name is tripto, my age is 21, my fav color is green";
+const myName = /My name is ([a-z]+)/gm;
+const getMyName = myName.exec(myStr);
+
+console.log(getMyName); //will return an object name will on index 1
+console.log(getMyName[1]); // will return the name
+
+````
