@@ -119,6 +119,12 @@ console.log(isPresent); //will return false, as theres no new line after my name
 
 \t matches a tab character (ASCII 9)
 
+### 🔰 /\\.mp3/ :
+
+\\. matches the character . literally 
+mp3 matches the characters mp3 literally
+
+
 ## Grouping:
 
 ### 🔰 /my name is ([a-z]+)/ :
@@ -132,5 +138,24 @@ const getMyName = myName.exec(myStr);
 
 console.log(getMyName); //will return an object name will on index 1
 console.log(getMyName[1]); // will return the name
+
+````
+
+### 🔰 /(\w+)\\.mp3/ :
+
+1st Capturing Group (\w+)
+
+\w+ matches any word character (equal to [a-zA-Z0-9_])
+
+\\. matches the character . literally 
+mp3 matches the characters mp3 literally
+
+``` javascript
+const songStr = "i have a mp3 player to play adat.mp3";
+const mySong = /(\w+)\.mp3/gmi;
+const getMySong = mySong.exec(songStr);
+
+console.log(getMySong);//will return an object
+console.log(getMySong[1]);// will return the name
 
 ````
